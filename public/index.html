@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Craft Apps Suite | WebAssembly Portal</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/switcher.css">
+</head>
+<body>
+
+  <!-- Topbar Header -->
+  <header class="topbar">
+    <div class="brand-section">
+      <a href="#" class="logo-wordmark">ARTCRAFT</a>
+      <span class="sub-tag">CRAFT APP SUITE</span>
+    </div>
+    <div class="topbar-right">
+      <button class="icon-btn" id="theme-toggle-btn" title="Alternar tema">☀️</button>
+      <div class="window-controls">
+        <button class="window-btn" title="Minimizar">─</button>
+        <button class="window-btn" title="Maximizar">□</button>
+        <button class="window-btn" title="Fechar">✕</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Notification Banner -->
+  <div class="update-banner" id="update-banner">
+    <span class="banner-badge">UPDATE</span>
+    <span class="banner-text">ArtCraft Launcher 0.19.2 is available.</span>
+    <div class="banner-actions">
+      <a href="https://github.com/storytold/craft-launcher/releases" target="_blank" rel="noopener noreferrer" class="banner-link">WHAT'S NEW ↗</a>
+      <button class="btn-restart" id="btn-update-restart">UPDATE AND RESTART</button>
+      <button class="btn-dismiss" id="dismiss-banner-btn" aria-label="Fechar notificação">✕</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Action Toolbar Strip -->
+    <div class="toolbar-strip">
+      <button class="btn-refresh" id="btn-refresh-suite" title="Atualizar catálogo">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="23 4 23 10 17 10"></polyline>
+          <polyline points="1 20 1 14 7 14"></polyline>
+          <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+        </svg>
+      </button>
+
+      <button class="btn-primary-dark" id="btn-update-all">
+        UPDATE ALL (2)
+      </button>
+
+      <!-- Sort -->
+      <div class="sort-group">
+        <span class="sort-label">SORT</span>
+        <select class="sort-select" id="sort-select">
+          <option value="name_asc">Name (A–Z)</option>
+          <option value="name_desc">Name (Z–A)</option>
+          <option value="category">Category</option>
+          <option value="updated">Recently Updated</option>
+        </select>
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-box-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="search" class="search-input" id="search-input" placeholder="Search apps" autocomplete="off">
+      </div>
+
+      <!-- View Toggle -->
+      <div class="view-toggle">
+        <button class="view-btn active" id="view-grid-btn" title="Visualização em Grade">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+          </svg>
+        </button>
+        <button class="view-btn" id="view-table-btn" title="Visualização em Tabela">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Section 1: INSTALLED -->
+    <h2 class="section-title">INSTALLED</h2>
+    <div class="installed-grid" id="installed-grid">
+      <!-- Cards rendered via JS -->
+    </div>
+
+    <!-- Section 2: NOT INSTALLED / AVAILABLE -->
+    <h2 class="section-title">NOT INSTALLED</h2>
+    <div class="apps-grid" id="not-installed-grid">
+      <!-- Cards rendered via JS -->
+    </div>
+
+    <!-- Table Container (Hidden by default) -->
+    <div id="table-container" style="display:none;"></div>
+
+  </main>
+
+  <!-- App Viewport & Multi-App Switcher (Full WebAssembly Runner) -->
+  <div id="app-viewport-container">
+    
+    <!-- Switcher Topbar -->
+    <header class="switcher-topbar">
+      <button class="btn-back-catalog" id="btn-back-catalog">
+        <span>←</span>
+        <span>Catálogo</span>
+      </button>
+
+      <div class="current-app-pill">
+        <img class="switcher-app-icon" id="switcher-app-icon" src="icons/cadcraft.png" alt="">
+        <span class="switcher-app-name" id="switcher-app-name">CADCraft</span>
+      </div>
+
+      <!-- Quick Multi-App Selector -->
+      <div class="app-selector-dropdown-wrapper">
+        <select class="app-selector-select" id="app-selector-select" title="Trocar de Aplicativo Instantaneamente">
+          <!-- Populated by JS -->
+        </select>
+      </div>
+
+      <span class="switcher-status">WASM · WEBGPU / WEBGL2</span>
+
+      <div class="switcher-actions-right">
+        <button class="switcher-btn" id="btn-reload" title="Recarregar aplicativo atual">
+          <span>🔄</span> Recarregar
+        </button>
+        <button class="switcher-btn" id="btn-new-tab" title="Abrir em nova aba do navegador">
+          <span>↗</span> Nova Aba
+        </button>
+        <button class="switcher-btn" id="btn-fullscreen" title="Modo Tela Cheia">
+          <span>⛶</span> Tela Cheia
+        </button>
+      </div>
+    </header>
+
+    <!-- App Frame Wrapper -->
+    <div class="app-frame-wrapper">
+      <div class="app-loading-screen" id="app-loading-screen">
+        <div class="loading-spinner"></div>
+        <div class="loading-text" id="loading-app-title">Iniciando WebAssembly...</div>
+        <div class="loading-subtext">Executando 100% no navegador via Rust + wgpu</div>
+      </div>
+      <iframe
+        id="app-iframe"
+        src="about:blank"
+        title="Craft App WebAssembly Container"
+        allow="fullscreen; clipboard-read; clipboard-write; cross-origin-isolated"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "craft-apps-portal",
+  "version": "1.0.0",
+  "description": "ArtCraft & Storytold Craft App Suite WebAssembly Portal with Multi-App Selector",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "download:all": "node scripts/download-apps.js",
+    "deploy:docker": "docker compose up -d --build"
+  },
+  "keywords": [
+    "cadcraft",
+    "solidcraft",
+    "gridcraft",
+    "artcraft",
+    "webassembly",
+    "rust",
+    "egui",
+    "wgpu"
+  ],
+  "author": "Kenzo Furman",
+  "license": "MIT"
+}

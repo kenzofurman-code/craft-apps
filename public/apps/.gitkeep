@@ -1,0 +1,2 @@
+# Apps directory for extracted WebAssembly bundles
+# Run `npm run download:all` or `bash scripts/download-apps.sh` to populate this folder.
