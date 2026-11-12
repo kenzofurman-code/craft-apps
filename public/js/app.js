@@ -18,6 +18,30 @@ const viewTableBtnEl = document.getElementById("view-table-btn");
 const themeToggleBtnEl = document.getElementById("theme-toggle-btn");
 const updateBannerEl = document.getElementById("update-banner");
 const dismissBannerBtnEl = document.getElementById("dismiss-banner-btn");
+const btnUpdateAllEl = document.getElementById("btn-update-all");
+const btnUpdateRestartEl = document.getElementById("btn-update-restart");
+const btnRefreshSuiteEl = document.getElementById("btn-refresh-suite");
+
+// Restore saved updates from localStorage
+function initPersistedState() {
+  const updatedApps = JSON.parse(localStorage.getItem("craft_updated_apps") || "[]");
+  currentApps = currentApps.map((app) => {
+    if (updatedApps.includes(app.id)) {
+      return {
+        ...app,
+        installed: true,
+        installedVersion: app.latestVersion,
+        updateAvailable: false
+      };
+    }
+    return app;
+  });
+
+  const bannerDismissed = localStorage.getItem("craft_banner_updated") === "true";
+  if (bannerDismissed && updateBannerEl) {
+    updateBannerEl.style.display = "none";
+  }
+}
 
 // Switcher Elements
 const viewportContainerEl = document.getElementById("app-viewport-container");
@@ -198,6 +222,68 @@ function renderTableView(apps) {
   `;
 }
 
+function updateToolbarBadge() {
+  const pendingUpdates = currentApps.filter((a) => a.updateAvailable).length;
+  if (btnUpdateAllEl) {
+    if (pendingUpdates > 0) {
+      btnUpdateAllEl.style.display = "flex";
+      btnUpdateAllEl.textContent = `UPDATE ALL (${pendingUpdates})`;
+    } else {
+      btnUpdateAllEl.style.display = "none";
+    }
+  }
+}
+
+function performUpdate(appId) {
+  const app = currentApps.find((a) => a.id === appId);
+  if (!app) return;
+
+  const btn = document.querySelector(`[data-update="${appId}"]`);
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = "UPDATING...";
+  }
+
+  setTimeout(() => {
+    app.installed = true;
+    app.installedVersion = app.latestVersion;
+    app.updateAvailable = false;
+
+    // Persist
+    const updatedApps = JSON.parse(localStorage.getItem("craft_updated_apps") || "[]");
+    if (!updatedApps.includes(appId)) {
+      updatedApps.push(appId);
+      localStorage.setItem("craft_updated_apps", JSON.stringify(updatedApps));
+    }
+
+    render();
+    updateToolbarBadge();
+  }, 400);
+}
+
+function updateAllApps() {
+  if (btnUpdateAllEl) {
+    btnUpdateAllEl.disabled = true;
+    btnUpdateAllEl.textContent = "UPDATING ALL...";
+  }
+
+  setTimeout(() => {
+    const updatedApps = JSON.parse(localStorage.getItem("craft_updated_apps") || "[]");
+    currentApps.forEach((app) => {
+      if (app.updateAvailable) {
+        app.installed = true;
+        app.installedVersion = app.latestVersion;
+        app.updateAvailable = false;
+        if (!updatedApps.includes(app.id)) updatedApps.push(app.id);
+      }
+    });
+
+    localStorage.setItem("craft_updated_apps", JSON.stringify(updatedApps));
+    render();
+    updateToolbarBadge();
+  }, 600);
+}
+
 function render() {
   const filtered = filterApps(currentApps, searchQuery);
   const sorted = sortApps(filtered, currentSort);
@@ -221,6 +307,7 @@ function render() {
     notInstalledGridEl.innerHTML = notInstalled.map(createCardHtml).join("");
   }
 
+  updateToolbarBadge();
   attachCardEvents();
 }
 
@@ -230,6 +317,14 @@ function attachCardEvents() {
       e.stopPropagation();
       const id = btn.getAttribute("data-open");
       launchApp(id);
+    };
+  });
+
+  document.querySelectorAll("[data-update]").forEach((btn) => {
+    btn.onclick = (e) => {
+      e.stopPropagation();
+      const id = btn.getAttribute("data-update");
+      performUpdate(id);
     };
   });
 }
@@ -362,6 +457,32 @@ function setupEvents() {
     };
   }
 
+  if (btnUpdateAllEl) {
+    btnUpdateAllEl.onclick = updateAllApps;
+  }
+
+  if (btnUpdateRestartEl && updateBannerEl) {
+    btnUpdateRestartEl.onclick = () => {
+      btnUpdateRestartEl.disabled = true;
+      btnUpdateRestartEl.textContent = "UPDATING...";
+      setTimeout(() => {
+        localStorage.setItem("craft_banner_updated", "true");
+        updateBannerEl.style.display = "none";
+      }, 500);
+    };
+  }
+
+  if (btnRefreshSuiteEl) {
+    btnRefreshSuiteEl.onclick = () => {
+      btnRefreshSuiteEl.style.transform = "rotate(360deg)";
+      btnRefreshSuiteEl.style.transition = "transform 0.5s ease";
+      setTimeout(() => {
+        btnRefreshSuiteEl.style.transform = "none";
+        render();
+      }, 500);
+    };
+  }
+
   // Handle URL hash on load (e.g. #app=cadcraft)
   window.addEventListener("hashchange", checkHash);
 }
@@ -375,6 +496,7 @@ function checkHash() {
 
 // Init
 initTheme();
+initPersistedState();
 setupEvents();
 render();
 checkHash();
