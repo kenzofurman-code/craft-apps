@@ -295,13 +295,25 @@ function render() {
     tableContainerEl.style.display = "block";
     tableContainerEl.innerHTML = renderTableView(sorted);
   } else {
-    installedGridEl.style.display = "grid";
-    notInstalledGridEl.style.display = "grid";
-    document.querySelectorAll(".section-title").forEach((el) => (el.style.display = "block"));
     tableContainerEl.style.display = "none";
 
     const installed = sorted.filter((a) => a.installed);
     const notInstalled = sorted.filter((a) => !a.installed);
+
+    const installedTitleEl = document.getElementById("installed-title");
+    const notInstalledTitleEl = document.getElementById("not-installed-title");
+
+    if (installedTitleEl) {
+      installedTitleEl.style.display = installed.length > 0 ? "block" : "none";
+      installedTitleEl.textContent = notInstalled.length === 0 ? `INSTALLED (${installed.length})` : "INSTALLED";
+    }
+
+    if (notInstalledTitleEl) {
+      notInstalledTitleEl.style.display = notInstalled.length > 0 ? "block" : "none";
+    }
+
+    installedGridEl.style.display = installed.length > 0 ? "grid" : "none";
+    notInstalledGridEl.style.display = notInstalled.length > 0 ? "grid" : "none";
 
     installedGridEl.innerHTML = installed.map(createCardHtml).join("");
     notInstalledGridEl.innerHTML = notInstalled.map(createCardHtml).join("");
