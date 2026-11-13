@@ -1,0 +1,2854 @@
+{
+  "metadata": {
+    "title": "CONSTRUÇÃO DE HABITAÇÃO COLETIVA EM ALVENARIA",
+    "units": "93 APARTAMENTOS E 122 QUITINETES",
+    "sheet": "PLANTA 4º PAVIMENTO, TIPO 1 E 18º PAVIMENTO",
+    "scale": "1:75",
+    "author": "ARQ. Alexandre Baioni Trento / ENG. Tiago de Mio",
+    "total_annotations": 203
+  },
+  "rooms": [
+    {
+      "floor": "18º Pavimento",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.86,
+      "perimeter": 8.82,
+      "wall_area": 24.7,
+      "box": {
+        "x": 49.31,
+        "y": 64.33,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 52.21,
+        "y": 62.61,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 9.36,
+      "perimeter": 12.24,
+      "wall_area": 34.27,
+      "box": {
+        "x": 52.21,
+        "y": 58.0,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.27,
+      "perimeter": 10.79,
+      "wall_area": 30.21,
+      "box": {
+        "x": 48.99,
+        "y": 60.38,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 2.72,
+      "perimeter": 6.6,
+      "wall_area": 18.48,
+      "box": {
+        "x": 49.7,
+        "y": 56.15,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ÁREA TÉC",
+      "category": "Técnica",
+      "area": 1.12,
+      "perimeter": 4.23,
+      "wall_area": 11.84,
+      "box": {
+        "x": 52.29,
+        "y": 54.52,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "SUÍTE",
+      "category": "Dormitório",
+      "area": 9.76,
+      "perimeter": 12.5,
+      "wall_area": 35.0,
+      "box": {
+        "x": 55.77,
+        "y": 57.53,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "I.S. SUÍTE",
+      "category": "Dormitório",
+      "area": 2.75,
+      "perimeter": 6.63,
+      "wall_area": 18.56,
+      "box": {
+        "x": 56.27,
+        "y": 60.37,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 6.24,
+      "perimeter": 9.99,
+      "wall_area": 27.97,
+      "box": {
+        "x": 54.37,
+        "y": 63.53,
+        "w": 2.99,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "CIRC",
+      "category": "Circulação",
+      "area": 2.56,
+      "perimeter": 6.4,
+      "wall_area": 17.92,
+      "box": {
+        "x": 54.37,
+        "y": 63.53,
+        "w": 2.99,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.94,
+      "perimeter": 6.86,
+      "wall_area": 19.21,
+      "box": {
+        "x": 52.27,
+        "y": 65.02,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 13.93,
+      "perimeter": 14.93,
+      "wall_area": 41.8,
+      "box": {
+        "x": 54.31,
+        "y": 70.22,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "COZINHA / LAVAND",
+      "category": "Serviço / Cozinha",
+      "area": 6.39,
+      "perimeter": 10.11,
+      "wall_area": 28.31,
+      "box": {
+        "x": 55.78,
+        "y": 72.24,
+        "w": 1.94,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.11,
+      "perimeter": 8.11,
+      "wall_area": 22.71,
+      "box": {
+        "x": 57.64,
+        "y": 69.02,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ÁREA TÉC",
+      "category": "Técnica",
+      "area": 1.07,
+      "perimeter": 4.14,
+      "wall_area": 11.59,
+      "box": {
+        "x": 58.51,
+        "y": 63.47,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 10.93,
+      "perimeter": 13.22,
+      "wall_area": 37.02,
+      "box": {
+        "x": 55.81,
+        "y": 78.39,
+        "w": 4.83,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.5,
+      "perimeter": 8.49,
+      "wall_area": 23.77,
+      "box": {
+        "x": 55.81,
+        "y": 78.39,
+        "w": 4.83,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "COZINHA / LAVAND",
+      "category": "Serviço / Cozinha",
+      "area": 6.33,
+      "perimeter": 10.06,
+      "wall_area": 28.17,
+      "box": {
+        "x": 55.57,
+        "y": 75.77,
+        "w": 1.94,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 53.03,
+        "y": 80.89,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "CIRC",
+      "category": "Circulação",
+      "area": 1.54,
+      "perimeter": 4.96,
+      "wall_area": 13.89,
+      "box": {
+        "x": 54.48,
+        "y": 81.58,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 6.5,
+      "perimeter": 10.2,
+      "wall_area": 28.56,
+      "box": {
+        "x": 53.62,
+        "y": 84.29,
+        "w": 4.88,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "SUÍTE",
+      "category": "Dormitório",
+      "area": 11.51,
+      "perimeter": 13.57,
+      "wall_area": 38.0,
+      "box": {
+        "x": 53.62,
+        "y": 84.29,
+        "w": 4.88,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "I.S. SUÍTE",
+      "category": "Dormitório",
+      "area": 2.75,
+      "perimeter": 6.63,
+      "wall_area": 18.56,
+      "box": {
+        "x": 58.17,
+        "y": 81.73,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.57,
+      "perimeter": 8.55,
+      "wall_area": 23.94,
+      "box": {
+        "x": 47.95,
+        "y": 78.59,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.93,
+      "perimeter": 11.26,
+      "wall_area": 31.53,
+      "box": {
+        "x": 47.53,
+        "y": 81.56,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 8.8,
+      "perimeter": 11.87,
+      "wall_area": 33.24,
+      "box": {
+        "x": 50.64,
+        "y": 81.71,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 50.67,
+        "y": 78.03,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 3.48,
+      "perimeter": 7.46,
+      "wall_area": 20.89,
+      "box": {
+        "x": 48.46,
+        "y": 86.45,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.57,
+      "perimeter": 8.55,
+      "wall_area": 23.94,
+      "box": {
+        "x": 44.51,
+        "y": 78.59,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.93,
+      "perimeter": 11.26,
+      "wall_area": 31.53,
+      "box": {
+        "x": 44.1,
+        "y": 81.56,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 8.8,
+      "perimeter": 11.87,
+      "wall_area": 33.24,
+      "box": {
+        "x": 41.83,
+        "y": 81.71,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 41.8,
+        "y": 78.03,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 3.48,
+      "perimeter": 7.46,
+      "wall_area": 20.89,
+      "box": {
+        "x": 44.0,
+        "y": 86.45,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.57,
+      "perimeter": 8.55,
+      "wall_area": 23.94,
+      "box": {
+        "x": 36.17,
+        "y": 78.59,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.93,
+      "perimeter": 11.26,
+      "wall_area": 31.53,
+      "box": {
+        "x": 35.75,
+        "y": 81.56,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 8.8,
+      "perimeter": 11.87,
+      "wall_area": 33.24,
+      "box": {
+        "x": 38.86,
+        "y": 81.71,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 38.89,
+        "y": 78.03,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 3.49,
+      "perimeter": 7.47,
+      "wall_area": 20.92,
+      "box": {
+        "x": 36.69,
+        "y": 86.45,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "CIRCULAÇÃO",
+      "category": "Circulação",
+      "area": 37.87,
+      "perimeter": 24.62,
+      "wall_area": 68.94,
+      "box": {
+        "x": 46.38,
+        "y": 75.16,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "VAZIO",
+      "category": "Outros",
+      "area": 1.22,
+      "perimeter": 4.42,
+      "wall_area": 12.38,
+      "box": {
+        "x": 38.65,
+        "y": 71.35,
+        "w": 6.57,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ESCADA",
+      "category": "Circulação Vertical",
+      "area": 18.86,
+      "perimeter": 17.37,
+      "wall_area": 48.64,
+      "box": {
+        "x": 38.65,
+        "y": 71.35,
+        "w": 6.57,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 4.34,
+      "perimeter": 8.33,
+      "wall_area": 23.32,
+      "box": {
+        "x": 38.65,
+        "y": 71.35,
+        "w": 6.57,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 5.01,
+      "perimeter": 8.95,
+      "wall_area": 25.06,
+      "box": {
+        "x": 46.64,
+        "y": 71.43,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 4.78,
+      "perimeter": 8.75,
+      "wall_area": 24.5,
+      "box": {
+        "x": 50.95,
+        "y": 72.44,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 4.78,
+      "perimeter": 8.75,
+      "wall_area": 24.5,
+      "box": {
+        "x": 50.95,
+        "y": 68.35,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.21,
+      "perimeter": 8.21,
+      "wall_area": 22.99,
+      "box": {
+        "x": 45.62,
+        "y": 56.16,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.78,
+      "perimeter": 6.67,
+      "wall_area": 18.68,
+      "box": {
+        "x": 44.99,
+        "y": 64.51,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "COZINHA",
+      "category": "Serviço / Cozinha",
+      "area": 4.39,
+      "perimeter": 8.38,
+      "wall_area": 23.46,
+      "box": {
+        "x": 46.71,
+        "y": 63.42,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "QUARTO / ESTAR",
+      "category": "Dormitório",
+      "area": 8.62,
+      "perimeter": 11.74,
+      "wall_area": 32.87,
+      "box": {
+        "x": 45.5,
+        "y": 59.86,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.2,
+      "perimeter": 8.2,
+      "wall_area": 22.96,
+      "box": {
+        "x": 42.13,
+        "y": 56.16,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.78,
+      "perimeter": 6.67,
+      "wall_area": 18.68,
+      "box": {
+        "x": 42.76,
+        "y": 64.51,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "COZINHA",
+      "category": "Serviço / Cozinha",
+      "area": 4.39,
+      "perimeter": 8.38,
+      "wall_area": 23.46,
+      "box": {
+        "x": 41.04,
+        "y": 63.42,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "QUARTO / ESTAR",
+      "category": "Dormitório",
+      "area": 8.62,
+      "perimeter": 11.74,
+      "wall_area": 32.87,
+      "box": {
+        "x": 41.7,
+        "y": 59.86,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 7.87,
+      "perimeter": 11.22,
+      "wall_area": 31.42,
+      "box": {
+        "x": 37.87,
+        "y": 59.86,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "COZINHA / ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 9.94,
+      "perimeter": 12.61,
+      "wall_area": 35.31,
+      "box": {
+        "x": 37.15,
+        "y": 63.67,
+        "w": 2.56,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.79,
+      "perimeter": 6.68,
+      "wall_area": 18.7,
+      "box": {
+        "x": 37.15,
+        "y": 66.79,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "18º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.21,
+      "perimeter": 8.21,
+      "wall_area": 22.99,
+      "box": {
+        "x": 37.7,
+        "y": 56.16,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.86,
+      "perimeter": 8.82,
+      "wall_area": 24.7,
+      "box": {
+        "x": 26.82,
+        "y": 15.44,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 29.73,
+        "y": 13.72,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 9.36,
+      "perimeter": 12.24,
+      "wall_area": 34.27,
+      "box": {
+        "x": 29.73,
+        "y": 9.11,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.27,
+      "perimeter": 10.79,
+      "wall_area": 30.21,
+      "box": {
+        "x": 26.51,
+        "y": 11.49,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 2.72,
+      "perimeter": 6.6,
+      "wall_area": 18.48,
+      "box": {
+        "x": 27.21,
+        "y": 7.25,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ÁREA TÉC",
+      "category": "Técnica",
+      "area": 1.12,
+      "perimeter": 4.23,
+      "wall_area": 11.84,
+      "box": {
+        "x": 29.81,
+        "y": 5.63,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SUÍTE",
+      "category": "Dormitório",
+      "area": 9.76,
+      "perimeter": 12.5,
+      "wall_area": 35.0,
+      "box": {
+        "x": 33.29,
+        "y": 8.64,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S. SUÍTE",
+      "category": "Dormitório",
+      "area": 2.75,
+      "perimeter": 6.63,
+      "wall_area": 18.56,
+      "box": {
+        "x": 33.79,
+        "y": 11.47,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 6.24,
+      "perimeter": 9.99,
+      "wall_area": 27.97,
+      "box": {
+        "x": 31.89,
+        "y": 14.63,
+        "w": 2.99,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "CIRC",
+      "category": "Circulação",
+      "area": 2.56,
+      "perimeter": 6.4,
+      "wall_area": 17.92,
+      "box": {
+        "x": 31.89,
+        "y": 14.63,
+        "w": 2.99,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.94,
+      "perimeter": 6.86,
+      "wall_area": 19.21,
+      "box": {
+        "x": 29.78,
+        "y": 16.13,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 13.93,
+      "perimeter": 14.93,
+      "wall_area": 41.8,
+      "box": {
+        "x": 31.85,
+        "y": 21.4,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "COZINHA / LAVAND",
+      "category": "Serviço / Cozinha",
+      "area": 6.39,
+      "perimeter": 10.11,
+      "wall_area": 28.31,
+      "box": {
+        "x": 33.2,
+        "y": 23.55,
+        "w": 1.94,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.11,
+      "perimeter": 8.11,
+      "wall_area": 22.71,
+      "box": {
+        "x": 35.15,
+        "y": 20.13,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ÁREA TÉC",
+      "category": "Técnica",
+      "area": 1.07,
+      "perimeter": 4.14,
+      "wall_area": 11.59,
+      "box": {
+        "x": 36.03,
+        "y": 14.58,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 10.93,
+      "perimeter": 13.22,
+      "wall_area": 37.02,
+      "box": {
+        "x": 33.29,
+        "y": 29.5,
+        "w": 4.86,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.5,
+      "perimeter": 8.49,
+      "wall_area": 23.77,
+      "box": {
+        "x": 33.29,
+        "y": 29.5,
+        "w": 4.86,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "COZINHA / LAVAND",
+      "category": "Serviço / Cozinha",
+      "area": 6.33,
+      "perimeter": 10.06,
+      "wall_area": 28.17,
+      "box": {
+        "x": 33.18,
+        "y": 26.96,
+        "w": 1.94,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 30.54,
+        "y": 31.99,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "CIRC",
+      "category": "Circulação",
+      "area": 1.54,
+      "perimeter": 4.96,
+      "wall_area": 13.89,
+      "box": {
+        "x": 32.0,
+        "y": 32.69,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 6.5,
+      "perimeter": 10.2,
+      "wall_area": 28.56,
+      "box": {
+        "x": 31.13,
+        "y": 35.84,
+        "w": 4.85,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SUÍTE",
+      "category": "Dormitório",
+      "area": 11.51,
+      "perimeter": 13.57,
+      "wall_area": 38.0,
+      "box": {
+        "x": 31.13,
+        "y": 35.84,
+        "w": 4.85,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S. SUÍTE",
+      "category": "Dormitório",
+      "area": 2.75,
+      "perimeter": 6.63,
+      "wall_area": 18.56,
+      "box": {
+        "x": 35.69,
+        "y": 32.84,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.57,
+      "perimeter": 8.55,
+      "wall_area": 23.94,
+      "box": {
+        "x": 25.47,
+        "y": 29.7,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.93,
+      "perimeter": 11.26,
+      "wall_area": 31.53,
+      "box": {
+        "x": 25.05,
+        "y": 32.67,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 8.8,
+      "perimeter": 11.87,
+      "wall_area": 33.24,
+      "box": {
+        "x": 28.16,
+        "y": 32.82,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 28.19,
+        "y": 29.14,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 3.48,
+      "perimeter": 7.46,
+      "wall_area": 20.89,
+      "box": {
+        "x": 25.98,
+        "y": 37.56,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.57,
+      "perimeter": 8.55,
+      "wall_area": 23.94,
+      "box": {
+        "x": 22.03,
+        "y": 29.7,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.93,
+      "perimeter": 11.26,
+      "wall_area": 31.53,
+      "box": {
+        "x": 21.62,
+        "y": 32.67,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 8.8,
+      "perimeter": 11.87,
+      "wall_area": 33.24,
+      "box": {
+        "x": 19.35,
+        "y": 32.82,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 19.31,
+        "y": 29.14,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 3.48,
+      "perimeter": 7.46,
+      "wall_area": 20.89,
+      "box": {
+        "x": 21.52,
+        "y": 37.56,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.57,
+      "perimeter": 8.55,
+      "wall_area": 23.94,
+      "box": {
+        "x": 13.69,
+        "y": 29.7,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.93,
+      "perimeter": 11.26,
+      "wall_area": 31.53,
+      "box": {
+        "x": 13.27,
+        "y": 32.67,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 8.8,
+      "perimeter": 11.87,
+      "wall_area": 33.24,
+      "box": {
+        "x": 16.38,
+        "y": 32.82,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 16.41,
+        "y": 29.14,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 3.49,
+      "perimeter": 7.47,
+      "wall_area": 20.92,
+      "box": {
+        "x": 14.2,
+        "y": 37.56,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "VAZIO",
+      "category": "Outros",
+      "area": 1.22,
+      "perimeter": 4.42,
+      "wall_area": 12.38,
+      "box": {
+        "x": 16.17,
+        "y": 22.46,
+        "w": 6.54,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ESCADA",
+      "category": "Circulação Vertical",
+      "area": 18.86,
+      "perimeter": 17.37,
+      "wall_area": 48.64,
+      "box": {
+        "x": 16.17,
+        "y": 22.46,
+        "w": 6.54,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 4.34,
+      "perimeter": 8.33,
+      "wall_area": 23.32,
+      "box": {
+        "x": 16.17,
+        "y": 22.46,
+        "w": 6.54,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 5.01,
+      "perimeter": 8.95,
+      "wall_area": 25.06,
+      "box": {
+        "x": 24.16,
+        "y": 22.54,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 4.78,
+      "perimeter": 8.75,
+      "wall_area": 24.5,
+      "box": {
+        "x": 28.47,
+        "y": 23.55,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 4.78,
+      "perimeter": 8.75,
+      "wall_area": 24.5,
+      "box": {
+        "x": 28.47,
+        "y": 19.46,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.21,
+      "perimeter": 8.21,
+      "wall_area": 22.99,
+      "box": {
+        "x": 23.14,
+        "y": 7.26,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.78,
+      "perimeter": 6.67,
+      "wall_area": 18.68,
+      "box": {
+        "x": 22.52,
+        "y": 15.54,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "COZINHA",
+      "category": "Serviço / Cozinha",
+      "area": 4.39,
+      "perimeter": 8.38,
+      "wall_area": 23.46,
+      "box": {
+        "x": 24.28,
+        "y": 14.75,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "QUARTO / ESTAR",
+      "category": "Dormitório",
+      "area": 8.62,
+      "perimeter": 11.74,
+      "wall_area": 32.87,
+      "box": {
+        "x": 23.02,
+        "y": 10.96,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.2,
+      "perimeter": 8.2,
+      "wall_area": 22.96,
+      "box": {
+        "x": 19.65,
+        "y": 7.26,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.78,
+      "perimeter": 6.67,
+      "wall_area": 18.68,
+      "box": {
+        "x": 20.28,
+        "y": 15.56,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "COZINHA",
+      "category": "Serviço / Cozinha",
+      "area": 4.39,
+      "perimeter": 8.38,
+      "wall_area": 23.46,
+      "box": {
+        "x": 18.62,
+        "y": 14.75,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "QUARTO / ESTAR",
+      "category": "Dormitório",
+      "area": 8.62,
+      "perimeter": 11.74,
+      "wall_area": 32.87,
+      "box": {
+        "x": 15.39,
+        "y": 10.57,
+        "w": 5.36,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 7.85,
+      "perimeter": 11.21,
+      "wall_area": 31.39,
+      "box": {
+        "x": 15.39,
+        "y": 10.57,
+        "w": 5.36,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "COZINHA / ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 9.92,
+      "perimeter": 12.6,
+      "wall_area": 35.28,
+      "box": {
+        "x": 14.61,
+        "y": 14.79,
+        "w": 2.56,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.77,
+      "perimeter": 6.66,
+      "wall_area": 18.65,
+      "box": {
+        "x": 14.67,
+        "y": 17.91,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.2,
+      "perimeter": 8.2,
+      "wall_area": 22.96,
+      "box": {
+        "x": 15.22,
+        "y": 7.26,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "CIRCULAÇÃO",
+      "category": "Circulação",
+      "area": 39.69,
+      "perimeter": 25.2,
+      "wall_area": 70.56,
+      "box": {
+        "x": 23.95,
+        "y": 26.16,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "CIRC",
+      "category": "Circulação",
+      "area": 0.93,
+      "perimeter": 3.86,
+      "wall_area": 10.81,
+      "box": {
+        "x": 7.58,
+        "y": 12.54,
+        "w": 5.83,
+        "h": 1.56
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.78,
+      "perimeter": 6.67,
+      "wall_area": 18.68,
+      "box": {
+        "x": 7.58,
+        "y": 12.54,
+        "w": 5.83,
+        "h": 1.56
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S. SUÍTE",
+      "category": "Dormitório",
+      "area": 3.21,
+      "perimeter": 7.17,
+      "wall_area": 20.08,
+      "box": {
+        "x": 7.58,
+        "y": 12.54,
+        "w": 5.83,
+        "h": 1.56
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SUÍTE",
+      "category": "Dormitório",
+      "area": 10.02,
+      "perimeter": 12.66,
+      "wall_area": 35.45,
+      "box": {
+        "x": 8.22,
+        "y": 8.68,
+        "w": 4.57,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 10.19,
+      "perimeter": 12.77,
+      "wall_area": 35.76,
+      "box": {
+        "x": 8.22,
+        "y": 8.68,
+        "w": 4.57,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 18.58,
+      "perimeter": 17.24,
+      "wall_area": 48.27,
+      "box": {
+        "x": 7.66,
+        "y": 17.53,
+        "w": 5.15,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 7.32,
+      "perimeter": 10.82,
+      "wall_area": 30.3,
+      "box": {
+        "x": 7.66,
+        "y": 17.53,
+        "w": 5.15,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "COZINHA / LAVAND",
+      "category": "Serviço / Cozinha",
+      "area": 6.12,
+      "perimeter": 9.9,
+      "wall_area": 27.72,
+      "box": {
+        "x": 9.39,
+        "y": 21.4,
+        "w": 1.94,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "COZINHA / LAVAND",
+      "category": "Serviço / Cozinha",
+      "area": 5.64,
+      "perimeter": 9.5,
+      "wall_area": 26.6,
+      "box": {
+        "x": 9.25,
+        "y": 24.78,
+        "w": 1.94,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 15.08,
+      "perimeter": 15.53,
+      "wall_area": 43.48,
+      "box": {
+        "x": 9.62,
+        "y": 29.14,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "CIRC",
+      "category": "Circulação",
+      "area": 0.93,
+      "perimeter": 3.86,
+      "wall_area": 10.81,
+      "box": {
+        "x": 8.05,
+        "y": 32.87,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 10.23,
+      "perimeter": 12.79,
+      "wall_area": 35.81,
+      "box": {
+        "x": 10.2,
+        "y": 37.26,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S. SUÍTE",
+      "category": "Dormitório",
+      "area": 3.21,
+      "perimeter": 7.17,
+      "wall_area": 20.08,
+      "box": {
+        "x": 6.24,
+        "y": 33.56,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SUÍTE",
+      "category": "Dormitório",
+      "area": 10.02,
+      "perimeter": 12.66,
+      "wall_area": 35.45,
+      "box": {
+        "x": 6.49,
+        "y": 37.26,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.78,
+      "perimeter": 6.67,
+      "wall_area": 18.68,
+      "box": {
+        "x": 10.84,
+        "y": 33.45,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "4º Pavimento",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 5.51,
+      "perimeter": 9.39,
+      "wall_area": 26.29,
+      "box": {
+        "x": 6.52,
+        "y": 27.7,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.86,
+      "perimeter": 8.82,
+      "wall_area": 24.7,
+      "box": {
+        "x": 67.78,
+        "y": 15.44,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 70.68,
+        "y": 13.72,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 9.36,
+      "perimeter": 12.24,
+      "wall_area": 34.27,
+      "box": {
+        "x": 70.68,
+        "y": 9.11,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.27,
+      "perimeter": 10.79,
+      "wall_area": 30.21,
+      "box": {
+        "x": 67.47,
+        "y": 11.49,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 2.72,
+      "perimeter": 6.6,
+      "wall_area": 18.48,
+      "box": {
+        "x": 68.17,
+        "y": 7.25,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ÁREA TÉC",
+      "category": "Técnica",
+      "area": 1.12,
+      "perimeter": 4.23,
+      "wall_area": 11.84,
+      "box": {
+        "x": 70.77,
+        "y": 5.63,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SUÍTE",
+      "category": "Dormitório",
+      "area": 9.76,
+      "perimeter": 12.5,
+      "wall_area": 35.0,
+      "box": {
+        "x": 74.24,
+        "y": 8.64,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S. SUÍTE",
+      "category": "Dormitório",
+      "area": 2.75,
+      "perimeter": 6.63,
+      "wall_area": 18.56,
+      "box": {
+        "x": 74.75,
+        "y": 11.47,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 6.24,
+      "perimeter": 9.99,
+      "wall_area": 27.97,
+      "box": {
+        "x": 72.85,
+        "y": 14.63,
+        "w": 2.99,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "CIRC",
+      "category": "Circulação",
+      "area": 2.56,
+      "perimeter": 6.4,
+      "wall_area": 17.92,
+      "box": {
+        "x": 72.85,
+        "y": 14.63,
+        "w": 2.99,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.94,
+      "perimeter": 6.86,
+      "wall_area": 19.21,
+      "box": {
+        "x": 70.74,
+        "y": 16.13,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 13.93,
+      "perimeter": 14.93,
+      "wall_area": 41.8,
+      "box": {
+        "x": 72.8,
+        "y": 21.4,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "COZINHA / LAVAND",
+      "category": "Serviço / Cozinha",
+      "area": 6.39,
+      "perimeter": 10.11,
+      "wall_area": 28.31,
+      "box": {
+        "x": 74.16,
+        "y": 23.55,
+        "w": 1.94,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.11,
+      "perimeter": 8.11,
+      "wall_area": 22.71,
+      "box": {
+        "x": 76.11,
+        "y": 20.13,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ÁREA TÉC",
+      "category": "Técnica",
+      "area": 1.07,
+      "perimeter": 4.14,
+      "wall_area": 11.59,
+      "box": {
+        "x": 76.98,
+        "y": 14.58,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 10.93,
+      "perimeter": 13.22,
+      "wall_area": 37.02,
+      "box": {
+        "x": 74.25,
+        "y": 29.5,
+        "w": 4.86,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.5,
+      "perimeter": 8.49,
+      "wall_area": 23.77,
+      "box": {
+        "x": 74.25,
+        "y": 29.5,
+        "w": 4.86,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "COZINHA / LAVAND",
+      "category": "Serviço / Cozinha",
+      "area": 6.33,
+      "perimeter": 10.06,
+      "wall_area": 28.17,
+      "box": {
+        "x": 74.14,
+        "y": 26.96,
+        "w": 1.94,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 71.5,
+        "y": 31.99,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "CIRC",
+      "category": "Circulação",
+      "area": 1.54,
+      "perimeter": 4.96,
+      "wall_area": 13.89,
+      "box": {
+        "x": 72.95,
+        "y": 32.69,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 6.5,
+      "perimeter": 10.2,
+      "wall_area": 28.56,
+      "box": {
+        "x": 72.09,
+        "y": 35.84,
+        "w": 4.85,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SUÍTE",
+      "category": "Dormitório",
+      "area": 11.51,
+      "perimeter": 13.57,
+      "wall_area": 38.0,
+      "box": {
+        "x": 72.09,
+        "y": 35.84,
+        "w": 4.85,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S. SUÍTE",
+      "category": "Dormitório",
+      "area": 2.75,
+      "perimeter": 6.63,
+      "wall_area": 18.56,
+      "box": {
+        "x": 76.65,
+        "y": 32.84,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.57,
+      "perimeter": 8.55,
+      "wall_area": 23.94,
+      "box": {
+        "x": 66.42,
+        "y": 29.7,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.93,
+      "perimeter": 11.26,
+      "wall_area": 31.53,
+      "box": {
+        "x": 66.01,
+        "y": 32.67,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 8.8,
+      "perimeter": 11.87,
+      "wall_area": 33.24,
+      "box": {
+        "x": 69.11,
+        "y": 32.82,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 69.14,
+        "y": 29.14,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 3.48,
+      "perimeter": 7.46,
+      "wall_area": 20.89,
+      "box": {
+        "x": 66.94,
+        "y": 37.56,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.57,
+      "perimeter": 8.55,
+      "wall_area": 23.94,
+      "box": {
+        "x": 62.99,
+        "y": 29.7,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.93,
+      "perimeter": 11.26,
+      "wall_area": 31.53,
+      "box": {
+        "x": 62.57,
+        "y": 32.67,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 8.8,
+      "perimeter": 11.87,
+      "wall_area": 33.24,
+      "box": {
+        "x": 60.3,
+        "y": 32.82,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 60.27,
+        "y": 29.14,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 3.48,
+      "perimeter": 7.46,
+      "wall_area": 20.89,
+      "box": {
+        "x": 62.47,
+        "y": 37.56,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ESTAR",
+      "category": "Social / Estar",
+      "area": 4.57,
+      "perimeter": 8.55,
+      "wall_area": 23.94,
+      "box": {
+        "x": 54.65,
+        "y": 29.7,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "COZINHA / JANTAR",
+      "category": "Social / Estar",
+      "area": 7.93,
+      "perimeter": 11.26,
+      "wall_area": 31.53,
+      "box": {
+        "x": 54.23,
+        "y": 32.67,
+        "w": 1.82,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 8.8,
+      "perimeter": 11.87,
+      "wall_area": 33.24,
+      "box": {
+        "x": 57.34,
+        "y": 32.82,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.81,
+      "perimeter": 6.71,
+      "wall_area": 18.79,
+      "box": {
+        "x": 57.37,
+        "y": 29.14,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 3.49,
+      "perimeter": 7.47,
+      "wall_area": 20.92,
+      "box": {
+        "x": 55.16,
+        "y": 37.56,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "VAZIO",
+      "category": "Outros",
+      "area": 1.22,
+      "perimeter": 4.42,
+      "wall_area": 12.38,
+      "box": {
+        "x": 57.12,
+        "y": 22.46,
+        "w": 6.54,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ESCADA",
+      "category": "Circulação Vertical",
+      "area": 18.86,
+      "perimeter": 17.37,
+      "wall_area": 48.64,
+      "box": {
+        "x": 57.12,
+        "y": 22.46,
+        "w": 6.54,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 4.34,
+      "perimeter": 8.33,
+      "wall_area": 23.32,
+      "box": {
+        "x": 57.12,
+        "y": 22.46,
+        "w": 6.54,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 5.01,
+      "perimeter": 8.95,
+      "wall_area": 25.06,
+      "box": {
+        "x": 65.12,
+        "y": 22.54,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 4.78,
+      "perimeter": 8.75,
+      "wall_area": 24.5,
+      "box": {
+        "x": 69.42,
+        "y": 23.55,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ELEVADOR",
+      "category": "Circulação Vertical",
+      "area": 4.78,
+      "perimeter": 8.75,
+      "wall_area": 24.5,
+      "box": {
+        "x": 69.42,
+        "y": 19.46,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.21,
+      "perimeter": 8.21,
+      "wall_area": 22.99,
+      "box": {
+        "x": 64.1,
+        "y": 7.26,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.78,
+      "perimeter": 6.67,
+      "wall_area": 18.68,
+      "box": {
+        "x": 63.47,
+        "y": 15.54,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "COZINHA",
+      "category": "Serviço / Cozinha",
+      "area": 4.39,
+      "perimeter": 8.38,
+      "wall_area": 23.46,
+      "box": {
+        "x": 65.24,
+        "y": 14.75,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "QUARTO / ESTAR",
+      "category": "Dormitório",
+      "area": 8.62,
+      "perimeter": 11.74,
+      "wall_area": 32.87,
+      "box": {
+        "x": 63.98,
+        "y": 10.96,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.2,
+      "perimeter": 8.2,
+      "wall_area": 22.96,
+      "box": {
+        "x": 60.61,
+        "y": 7.26,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.78,
+      "perimeter": 6.67,
+      "wall_area": 18.68,
+      "box": {
+        "x": 61.23,
+        "y": 15.56,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "COZINHA",
+      "category": "Serviço / Cozinha",
+      "area": 4.39,
+      "perimeter": 8.38,
+      "wall_area": 23.46,
+      "box": {
+        "x": 59.58,
+        "y": 14.75,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "QUARTO / ESTAR",
+      "category": "Dormitório",
+      "area": 8.62,
+      "perimeter": 11.74,
+      "wall_area": 32.87,
+      "box": {
+        "x": 56.35,
+        "y": 10.57,
+        "w": 5.36,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 7.85,
+      "perimeter": 11.21,
+      "wall_area": 31.39,
+      "box": {
+        "x": 56.35,
+        "y": 10.57,
+        "w": 5.36,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "COZINHA / ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 9.92,
+      "perimeter": 12.6,
+      "wall_area": 35.28,
+      "box": {
+        "x": 55.56,
+        "y": 14.79,
+        "w": 2.56,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.77,
+      "perimeter": 6.66,
+      "wall_area": 18.65,
+      "box": {
+        "x": 55.62,
+        "y": 17.91,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 4.2,
+      "perimeter": 8.2,
+      "wall_area": 22.96,
+      "box": {
+        "x": 56.18,
+        "y": 7.26,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "CIRC",
+      "category": "Circulação",
+      "area": 0.93,
+      "perimeter": 3.86,
+      "wall_area": 10.81,
+      "box": {
+        "x": 48.54,
+        "y": 12.54,
+        "w": 5.83,
+        "h": 1.56
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.78,
+      "perimeter": 6.67,
+      "wall_area": 18.68,
+      "box": {
+        "x": 48.54,
+        "y": 12.54,
+        "w": 5.83,
+        "h": 1.56
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S. SUÍTE",
+      "category": "Dormitório",
+      "area": 3.21,
+      "perimeter": 7.17,
+      "wall_area": 20.08,
+      "box": {
+        "x": 48.54,
+        "y": 12.54,
+        "w": 5.83,
+        "h": 1.56
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SUÍTE",
+      "category": "Dormitório",
+      "area": 10.02,
+      "perimeter": 12.66,
+      "wall_area": 35.45,
+      "box": {
+        "x": 49.18,
+        "y": 8.68,
+        "w": 4.57,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 10.19,
+      "perimeter": 12.77,
+      "wall_area": 35.76,
+      "box": {
+        "x": 49.18,
+        "y": 8.68,
+        "w": 4.57,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 18.58,
+      "perimeter": 17.24,
+      "wall_area": 48.27,
+      "box": {
+        "x": 48.61,
+        "y": 17.53,
+        "w": 5.15,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 7.32,
+      "perimeter": 10.82,
+      "wall_area": 30.3,
+      "box": {
+        "x": 48.61,
+        "y": 17.53,
+        "w": 5.15,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "COZINHA / LAVAND",
+      "category": "Serviço / Cozinha",
+      "area": 6.12,
+      "perimeter": 9.9,
+      "wall_area": 27.72,
+      "box": {
+        "x": 50.34,
+        "y": 21.4,
+        "w": 1.94,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "COZINHA / LAVAND",
+      "category": "Serviço / Cozinha",
+      "area": 5.51,
+      "perimeter": 9.39,
+      "wall_area": 26.29,
+      "box": {
+        "x": 50.21,
+        "y": 24.78,
+        "w": 1.94,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "ESTAR / JANTAR",
+      "category": "Social / Estar",
+      "area": 15.21,
+      "perimeter": 15.6,
+      "wall_area": 43.68,
+      "box": {
+        "x": 50.58,
+        "y": 29.14,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "CIRC",
+      "category": "Circulação",
+      "area": 0.93,
+      "perimeter": 3.86,
+      "wall_area": 10.81,
+      "box": {
+        "x": 49.0,
+        "y": 32.87,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "QUARTO",
+      "category": "Dormitório",
+      "area": 10.23,
+      "perimeter": 12.79,
+      "wall_area": 35.81,
+      "box": {
+        "x": 51.16,
+        "y": 37.26,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S. SUÍTE",
+      "category": "Dormitório",
+      "area": 3.21,
+      "perimeter": 7.17,
+      "wall_area": 20.08,
+      "box": {
+        "x": 47.19,
+        "y": 33.56,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SUÍTE",
+      "category": "Dormitório",
+      "area": 10.02,
+      "perimeter": 12.66,
+      "wall_area": 35.45,
+      "box": {
+        "x": 47.45,
+        "y": 37.26,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "I.S",
+      "category": "Sanitário",
+      "area": 2.78,
+      "perimeter": 6.67,
+      "wall_area": 18.68,
+      "box": {
+        "x": 51.8,
+        "y": 33.45,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "SACADA",
+      "category": "Área Externa",
+      "area": 5.51,
+      "perimeter": 9.39,
+      "wall_area": 26.29,
+      "box": {
+        "x": 47.47,
+        "y": 27.7,
+        "w": 1.8,
+        "h": 1.4
+      }
+    },
+    {
+      "floor": "Pavimento Tipo (5º–17º)",
+      "name": "CIRCULAÇÃO",
+      "category": "Circulação",
+      "area": 39.69,
+      "perimeter": 25.2,
+      "wall_area": 70.56,
+      "box": {
+        "x": 64.94,
+        "y": 26.29,
+        "w": 1.8,
+        "h": 1.4
+      }
+    }
+  ]
+}

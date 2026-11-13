@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Separador de Camadas & Levantador de Áreas | Obra360</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: #0f1013;
+      color: #f1f2f6;
+      font-family: var(--sans);
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Navigation */
+    .analyzer-navbar {
+      height: 48px;
+      background: #18191e;
+      border-bottom: 1px solid #282a32;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      gap: 16px;
+      z-index: 100;
+    }
+
+    .btn-nav-back {
+      background: #252830;
+      border: 1px solid #383b46;
+      color: #e5e7eb;
+      border-radius: 3px;
+      padding: 5px 12px;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-transform: uppercase;
+      transition: background 0.15s;
+    }
+    .btn-nav-back:hover {
+      background: #323642;
+      border-color: #4f5362;
+    }
+
+    .project-header-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-title {
+      font-family: var(--display);
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.02em;
+    }
+
+    .project-subtitle {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: #9ca3af;
+    }
+
+    .nav-actions-right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge-live {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #10b981;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 2px;
+      letter-spacing: 0.05em;
+    }
+
+    /* Main Workspace Layout */
+    .analyzer-workspace {
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: 280px 1fr 380px;
+      height: calc(100vh - 48px);
+      overflow: hidden;
+    }
+
+    /* Left Sidebar: Layers & Controls */
+    .sidebar-left {
+      background: #141519;
+      border-right: 1px solid #23252c;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      overflow-y: auto;
+    }
+
+    .panel-block-title {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #9ca3af;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .layer-item {
+      background: #1c1d24;
+      border: 1px solid #2a2c36;
+      border-radius: 4px;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: border-color 0.15s;
+    }
+    .layer-item:hover {
+      border-color: #3f4252;
+    }
+
+    .layer-row-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .layer-name-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .layer-color-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+    }
+
+    .toggle-switch {
+      position: relative;
+      display: inline-block;
+      width: 32px;
+      height: 18px;
+    }
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background-color: #2b2e38;
+      transition: .2s;
+      border-radius: 18px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 12px;
+      width: 12px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .2s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #3b82f6;
+    }
+    input:checked + .slider:before {
+      transform: translateX(14px);
+    }
+
+    .opacity-slider-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10.5px;
+      color: #9ca3af;
+      font-family: var(--mono);
+    }
+    .opacity-slider-row input[type="range"] {
+      flex-grow: 1;
+      height: 4px;
+    }
+
+    /* KPI Summary Cards */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .kpi-card {
+      background: #1a1c22;
+      border: 1px solid #282a33;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .kpi-label {
+      font-family: var(--mono);
+      font-size: 9.5px;
+      color: #8b8e99;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .kpi-val {
+      font-family: var(--display);
+      font-size: 16px;
+      font-weight: 800;
+      color: #60a5fa;
+      margin-top: 4px;
+    }
+
+    /* Center Viewport */
+    .viewer-container {
+      position: relative;
+      background: #090a0d;
+      overflow: hidden;
+      cursor: grab;
+      user-select: none;
+    }
+    .viewer-container:active {
+      cursor: grabbing;
+    }
+
+    .viewport-canvas {
+      position: absolute;
+      transform-origin: 0 0;
+      transition: transform 0.05s ease-out;
+    }
+
+    .base-plan-image {
+      display: block;
+      width: 2500px;
+      height: 1769px;
+      pointer-events: none;
+    }
+
+    .walls-overlay-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2500px;
+      height: 1769px;
+      pointer-events: none;
+      mix-blend-mode: screen;
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+
+    /* Hotspot markers for rooms */
+    .room-hotspot {
+      position: absolute;
+      border: 1px dashed rgba(59, 130, 246, 0.4);
+      background: rgba(59, 130, 246, 0.12);
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .room-hotspot:hover, .room-hotspot.selected {
+      border: 2px solid #3b82f6;
+      background: rgba(59, 130, 246, 0.35);
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
+      z-index: 50;
+    }
+
+    /* Viewport Floating Controls */
+    .viewer-tools-floating {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(24, 25, 30, 0.92);
+      border: 1px solid #333642;
+      backdrop-filter: blur(8px);
+      border-radius: 6px;
+      padding: 6px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      z-index: 60;
+    }
+    .btn-tool {
+      background: #252830;
+      border: 1px solid #3a3d4a;
+      color: #fff;
+      border-radius: 3px;
+      height: 28px;
+      padding: 0 10px;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-tool:hover {
+      background: #333742;
+    }
+
+    /* Right Sidebar: Quantities Table */
+    .sidebar-right {
+      background: #141519;
+      border-left: 1px solid #23252c;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .table-top-controls {
+      padding: 12px 16px;
+      border-bottom: 1px solid #23252c;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .filter-select {
+      background: #1c1d24;
+      border: 1px solid #2e313d;
+      color: #fff;
+      border-radius: 3px;
+      height: 30px;
+      padding: 0 8px;
+      font-size: 11.5px;
+      outline: none;
+      width: 100%;
+    }
+
+    .table-scroll-wrap {
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+
+    .quant-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11.5px;
+    }
+    .quant-table th {
+      position: sticky;
+      top: 0;
+      background: #1a1c22;
+      border-bottom: 1px solid #2b2e38;
+      padding: 8px 10px;
+      font-family: var(--mono);
+      font-size: 9.5px;
+      font-weight: 700;
+      color: #9ca3af;
+      text-transform: uppercase;
+      text-align: left;
+      z-index: 10;
+    }
+    .quant-table td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #1f2128;
+      color: #e5e7eb;
+    }
+    .quant-table tr {
+      cursor: pointer;
+      transition: background 0.1s;
+    }
+    .quant-table tr:hover {
+      background: #1e2129;
+    }
+    .quant-table tr.active-row {
+      background: #1e293b;
+      border-left: 3px solid #3b82f6;
+    }
+
+    .table-footer-export {
+      padding: 12px 16px;
+      border-top: 1px solid #23252c;
+      background: #16171d;
+      display: flex;
+      gap: 8px;
+    }
+    .btn-export-csv {
+      flex-grow: 1;
+      height: 32px;
+      background: #059669;
+      color: #ffffff;
+      border: none;
+      border-radius: 3px;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .btn-export-csv:hover {
+      background: #047857;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="analyzer-navbar">
+    <a href="index.html" class="btn-nav-back">
+      <span>←</span>
+      <span>Catálogo Craft Apps</span>
+    </a>
+
+    <div class="project-header-info">
+      <span class="project-title">Demonstrador de Camadas & Levantador de Quantidades (Obra360)</span>
+      <span class="project-subtitle">HABITAÇÃO COLETIVA EM ALVENARIA | 93 APARTAMENTOS E 122 QUITINETES | ESCALA 1:75</span>
+    </div>
+
+    <div class="nav-actions-right">
+      <span class="badge-live">VECTOR ENGINE ATIVO</span>
+    </div>
+  </header>
+
+  <!-- Workspace -->
+  <div class="analyzer-workspace">
+
+    <!-- Left Sidebar: Camadas (Layers) -->
+    <aside class="sidebar-left">
+      <div>
+        <div class="panel-block-title">🧱 Camadas do Desenho (Layers)</div>
+        
+        <!-- Layer 1: Alvenarias / Paredes -->
+        <div class="layer-item">
+          <div class="layer-row-header">
+            <div class="layer-name-wrap">
+              <span class="layer-color-dot" style="background: #f97316;"></span>
+              <span>Alvenaria / Paredes</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" id="toggle-walls" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="opacity-slider-row">
+            <span>Opacidade</span>
+            <input type="range" id="walls-opacity" min="0" max="1" step="0.05" value="0.9">
+          </div>
+        </div>
+
+        <!-- Layer 2: Ambientes e Cômodos -->
+        <div class="layer-item">
+          <div class="layer-row-header">
+            <div class="layer-name-wrap">
+              <span class="layer-color-dot" style="background: #3b82f6;"></span>
+              <span>Ambientes (Áreas)</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" id="toggle-rooms" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Layer 3: Planta Base de Fundo -->
+        <div class="layer-item">
+          <div class="layer-row-header">
+            <div class="layer-name-wrap">
+              <span class="layer-color-dot" style="background: #9ca3af;"></span>
+              <span>Planta Arquitetônica</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" id="toggle-base" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="opacity-slider-row">
+            <span>Opacidade</span>
+            <input type="range" id="base-opacity" min="0.05" max="1" step="0.05" value="1.0">
+          </div>
+        </div>
+
+        <!-- Modo Raio-X -->
+        <div class="layer-item" style="border-color:#f97316;background:rgba(249,115,22,0.06);">
+          <div class="layer-row-header">
+            <div class="layer-name-wrap">
+              <span>⚡ Modo Raio-X de Paredes</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" id="toggle-xray">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPIs da Seleção -->
+      <div>
+        <div class="panel-block-title">📊 Resumo do Levantamento</div>
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-label">Ambientes</div>
+            <div class="kpi-val" id="kpi-count">0</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Área Medida</div>
+            <div class="kpi-val" id="kpi-area">0 m²</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Perímetro Total</div>
+            <div class="kpi-val" id="kpi-perim" style="color:#10b981;">0 m</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Alvenaria (h=2.8m)</div>
+            <div class="kpi-val" id="kpi-walls" style="color:#f97316;">0 m²</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explicação Técnica -->
+      <div style="font-size:11px;color:#9ca3af;line-height:1.45;border-top:1px solid #23252c;padding-top:12px;">
+        💡 <strong>Como foi feito:</strong> O PDF vetorial do Revit foi filtrado por padrões de hachura e traços geométricos, gerando a camada isolada de paredes com 1.748 polígonos e extraindo 203 áreas nominais catalogadas.
+      </div>
+    </aside>
+
+    <!-- Center: Interactive Plan Viewer -->
+    <main class="viewer-container" id="viewer-container">
+      <div class="viewport-canvas" id="viewport-canvas">
+        <img class="base-plan-image" id="base-image" src="planta_base.jpg" alt="Planta Arquitetônica">
+        <img class="walls-overlay-image" id="walls-image" src="planta_paredes.png" alt="Camada de Alvenarias">
+        <div id="hotspots-layer" style="position:absolute;inset:0;"></div>
+      </div>
+
+      <!-- Viewport Floating Tools -->
+      <div class="viewer-tools-floating">
+        <button class="btn-tool" id="btn-zoom-in">Zoom +</button>
+        <button class="btn-tool" id="btn-zoom-out">Zoom −</button>
+        <button class="btn-tool" id="btn-zoom-fit">Ajustar (Fit)</button>
+        <span style="font-family:var(--mono);font-size:11px;color:#9ca3af;" id="zoom-level-text">100%</span>
+      </div>
+    </main>
+
+    <!-- Right Sidebar: Quantities Table -->
+    <aside class="sidebar-right">
+      <div class="table-top-controls">
+        <span class="panel-block-title" style="margin:0;">📋 Tabela de Quantidades (Obra360)</span>
+        
+        <!-- Floor Filter -->
+        <select class="filter-select" id="filter-floor">
+          <option value="all">Todos os Pavimentos (Prancha Inteira)</option>
+          <option value="4º Pavimento">Planta 1: 4º Pavimento</option>
+          <option value="Pavimento Tipo (5º–17º)">Planta 2: Pavimento Tipo (5º ao 17º)</option>
+          <option value="18º Pavimento">Planta 3: 18º Pavimento</option>
+        </select>
+
+        <!-- Category Filter -->
+        <select class="filter-select" id="filter-category">
+          <option value="all">Todas as Categorias</option>
+          <option value="Dormitório">Dormitórios / Suítes</option>
+          <option value="Social / Estar">Salas de Estar / Jantar</option>
+          <option value="Serviço / Cozinha">Cozinhas / Lavanderias</option>
+          <option value="Sanitário">Sanitários / I.S.</option>
+          <option value="Área Externa">Sacadas & Terraços</option>
+          <option value="Circulação">Circulações & Halls</option>
+          <option value="Circulação Vertical">Escadas & Elevadores</option>
+        </select>
+      </div>
+
+      <div class="table-scroll-wrap">
+        <table class="quant-table">
+          <thead>
+            <tr>
+              <th>Ambiente</th>
+              <th>Pavimento</th>
+              <th>Área</th>
+              <th>Perím.</th>
+              <th>Alvenaria</th>
+            </tr>
+          </thead>
+          <tbody id="quant-tbody">
+            <!-- Populated via JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-footer-export">
+        <button class="btn-export-csv" id="btn-export-csv">
+          <span>📊</span>
+          <span>Exportar Planilha CSV (Abrir no GridCraft)</span>
+        </button>
+      </div>
+    </aside>
+
+  </div>
+
+  <script>
+    let planData = [];
+    let zoom = 0.55;
+    let panX = 40;
+    let panY = 40;
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+    let selectedRoomIndex = null;
+
+    const viewerContainer = document.getElementById("viewer-container");
+    const viewportCanvas = document.getElementById("viewport-canvas");
+    const baseImage = document.getElementById("base-image");
+    const wallsImage = document.getElementById("walls-image");
+    const hotspotsLayer = document.getElementById("hotspots-layer");
+    const quantTbody = document.getElementById("quant-tbody");
+    const zoomLevelText = document.getElementById("zoom-level-text");
+
+    const toggleWalls = document.getElementById("toggle-walls");
+    const wallsOpacity = document.getElementById("walls-opacity");
+    const toggleBase = document.getElementById("toggle-base");
+    const baseOpacity = document.getElementById("base-opacity");
+    const toggleRooms = document.getElementById("toggle-rooms");
+    const toggleXray = document.getElementById("toggle-xray");
+
+    const filterFloor = document.getElementById("filter-floor");
+    const filterCategory = document.getElementById("filter-category");
+
+    const kpiCount = document.getElementById("kpi-count");
+    const kpiArea = document.getElementById("kpi-area");
+    const kpiPerim = document.getElementById("kpi-perim");
+    const kpiWalls = document.getElementById("kpi-walls");
+
+    // Load data
+    fetch("plan_data.json")
+      .then(res => res.json())
+      .then(data => {
+        planData = data.rooms;
+        renderAll();
+        fitToScreen();
+      });
+
+    function applyTransform() {
+      viewportCanvas.style.transform = `translate(${panX}px, ${panY}px) scale(${zoom})`;
+      zoomLevelText.textContent = `${Math.round(zoom * 100)}%`;
+    }
+
+    function fitToScreen() {
+      const containerW = viewerContainer.clientWidth;
+      const containerH = viewerContainer.clientHeight;
+      zoom = Math.min(containerW / 2500, containerH / 1769) * 0.95;
+      panX = (containerW - 2500 * zoom) / 2;
+      panY = (containerH - 1769 * zoom) / 2;
+      applyTransform();
+    }
+
+    // Pan / Zoom events
+    viewerContainer.addEventListener("mousedown", (e) => {
+      if (e.target.closest(".viewer-tools-floating") || e.target.closest(".room-hotspot")) return;
+      isDragging = true;
+      startX = e.clientX - panX;
+      startY = e.clientY - panY;
+    });
+
+    window.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+      panX = e.clientX - startX;
+      panY = e.clientY - startY;
+      applyTransform();
+    });
+
+    window.addEventListener("mouseup", () => isDragging = false);
+
+    viewerContainer.addEventListener("wheel", (e) => {
+      e.preventDefault();
+      const delta = e.deltaY > 0 ? 0.9 : 1.1;
+      const rect = viewerContainer.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      const newZoom = Math.max(0.15, Math.min(4.0, zoom * delta));
+      panX = mouseX - (mouseX - panX) * (newZoom / zoom);
+      panY = mouseY - (mouseY - panY) * (newZoom / zoom);
+      zoom = newZoom;
+      applyTransform();
+    }, { passive: false });
+
+    document.getElementById("btn-zoom-in").onclick = () => {
+      zoom = Math.min(4.0, zoom * 1.25);
+      applyTransform();
+    };
+    document.getElementById("btn-zoom-out").onclick = () => {
+      zoom = Math.max(0.15, zoom / 1.25);
+      applyTransform();
+    };
+    document.getElementById("btn-zoom-fit").onclick = fitToScreen;
+
+    // Layer controls
+    toggleWalls.onchange = () => {
+      wallsImage.style.display = toggleWalls.checked ? "block" : "none";
+    };
+    wallsOpacity.oninput = () => {
+      wallsImage.style.opacity = wallsOpacity.value;
+    };
+    toggleBase.onchange = () => {
+      baseImage.style.display = toggleBase.checked ? "block" : "none";
+    };
+    baseOpacity.oninput = () => {
+      baseImage.style.opacity = baseOpacity.value;
+    };
+    toggleRooms.onchange = () => {
+      hotspotsLayer.style.display = toggleRooms.checked ? "block" : "none";
+    };
+    toggleXray.onchange = () => {
+      if (toggleXray.checked) {
+        baseImage.style.opacity = "0.08";
+        wallsImage.style.opacity = "1";
+        wallsImage.style.filter = "drop-shadow(0 0 4px #f97316)";
+      } else {
+        baseImage.style.opacity = baseOpacity.value;
+        wallsImage.style.opacity = wallsOpacity.value;
+        wallsImage.style.filter = "none";
+      }
+    };
+
+    // Filter & Render
+    function getFilteredData() {
+      const fFloor = filterFloor.value;
+      const fCat = filterCategory.value;
+
+      return planData.filter(room => {
+        const matchFloor = fFloor === "all" || room.floor === fFloor;
+        const matchCat = fCat === "all" || room.category === fCat;
+        return matchFloor && matchCat;
+      });
+    }
+
+    function renderAll() {
+      const filtered = getFilteredData();
+
+      // Render KPIs
+      let totArea = 0;
+      let totPerim = 0;
+      let totWalls = 0;
+
+      filtered.forEach(r => {
+        totArea += r.area;
+        totPerim += r.perimeter;
+        totWalls += r.wall_area;
+      });
+
+      kpiCount.textContent = filtered.length;
+      kpiArea.textContent = `${totArea.toFixed(2)} m²`;
+      kpiPerim.textContent = `${totPerim.toFixed(1)} m`;
+      kpiWalls.textContent = `${totWalls.toFixed(1)} m²`;
+
+      // Render Table
+      quantTbody.innerHTML = filtered.map((r, i) => `
+        <tr data-index="${planData.indexOf(r)}" class="${planData.indexOf(r) === selectedRoomIndex ? 'active-row' : ''}">
+          <td><strong>${r.name}</strong><div style="font-size:10px;color:#9ca3af;">${r.category}</div></td>
+          <td><span style="font-size:10px;color:#cbd5e1;">${r.floor}</span></td>
+          <td><strong style="color:#60a5fa;">${r.area.toFixed(2)}</strong> m²</td>
+          <td>${r.perimeter.toFixed(1)} m</td>
+          <td style="color:#f97316;">${r.wall_area.toFixed(1)} m²</td>
+        </tr>
+      `).join("");
+
+      // Render Hotspots
+      hotspotsLayer.innerHTML = filtered.map((r) => {
+        const idx = planData.indexOf(r);
+        return `
+          <div class="room-hotspot ${idx === selectedRoomIndex ? 'selected' : ''}" 
+               data-index="${idx}"
+               style="left:${r.box.x}%; top:${r.box.y}%; width:${r.box.w}%; height:${r.box.h}%;"
+               title="${r.name} (${r.area} m²)">
+          </div>
+        `;
+      }).join("");
+
+      attachEvents();
+    }
+
+    function focusOnRoom(index) {
+      selectedRoomIndex = index;
+      const room = planData[index];
+      if (!room) return;
+
+      // Center viewport on room
+      const targetX = (room.box.x / 100) * 2500;
+      const targetY = (room.box.y / 100) * 1769;
+
+      zoom = 1.6;
+      panX = viewerContainer.clientWidth / 2 - targetX * zoom;
+      panY = viewerContainer.clientHeight / 2 - targetY * zoom;
+      applyTransform();
+
+      renderAll();
+
+      // Scroll table
+      const row = document.querySelector(`tr[data-index="${index}"]`);
+      if (row) {
+        row.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }
+
+    function attachEvents() {
+      document.querySelectorAll(".room-hotspot").forEach(el => {
+        el.onclick = (e) => {
+          e.stopPropagation();
+          const idx = parseInt(el.getAttribute("data-index"));
+          focusOnRoom(idx);
+        };
+      });
+
+      document.querySelectorAll("#quant-tbody tr").forEach(row => {
+        row.onclick = () => {
+          const idx = parseInt(row.getAttribute("data-index"));
+          focusOnRoom(idx);
+        };
+      });
+    }
+
+    filterFloor.onchange = renderAll;
+    filterCategory.onchange = renderAll;
+
+    // Export CSV
+    document.getElementById("btn-export-csv").onclick = () => {
+      const filtered = getFilteredData();
+      let csv = "Ambiente;Categoria;Pavimento;Area_m2;Perimetro_m;Alvenaria_m2\n";
+      filtered.forEach(r => {
+        csv += `"${r.name}";"${r.category}";"${r.floor}";${r.area};${r.perimeter};${r.wall_area}\n`;
+      });
+
+      const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "levantamento_quantidades_planta.csv";
+      a.click();
+    };
+  </script>
+</body>
+</html>
